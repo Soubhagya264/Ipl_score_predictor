@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins",sans-serif;
+}
+
+body{
+    background: #000;
+    min-height: 150vh;
+
+}
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content:  center;;
+    align-items: center;
+    transition: 0.06s;
+    padding: 40px 100px;
+    z-index: 100000;
+    
+    
+
+}
+header.sticky{
+    padding: 19px 100px;
+    background: #000;
+    opacity: 0.7;
+}
+
+header a.logo{
+    position: relative;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: 0.6s;
+    border-radius: 4px;
+    box-shadow: 0 25px 32px rgba(0,0,0,0.9);
+}
+
+
+.banner{
+    position: absolute;
+    width: 100%;
+    height: 150vh;
+    background: url(/static/texture.jpg);
+    
+    background-size: cover;
+}
+
+.banner .form-box .box{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 700px;
+    padding: 50px;
+    background: rgba(0,0,0, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 19px 29px rgba(0,0,0,0.5);
+    border-radius: 10px;
+
+}
+.banner .img-chng{
+    position: absolute;
+    top: 55%;
+    left: 18%;
+    transform: translate(-50%,-50%);
+    width: 290px;
+    height: 420px;
+    padding: 50px;
+    background:url(/static/mi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    box-shadow: 0 19px 29px rgba(0,0,0,0.5);
+    border-radius: 7px;
+
+     animation-name: animate;
+     animation-direction: alternate-reverse;
+     animation-duration: 20s;
+     animation-fill-mode:forwards;
+     animation-iteration-count: infinite;
+     animation-play-state: running;
+     animation-timing-function: ease-in-out;
+
+     /* animation: animate 10s ; */
+}
+
+@keyframes animate{
+    0%{
+        background-image: url(/static/csk.png)
+    }
+    20%{
+        background-image: url(/static/rcb.png)
+    }
+    40%{
+        background-image: url(/static/kkr.jpg)
+    }
+    50%{
+        background-image: url(/static/kxip.png)
+    }
+    60%{
+        background-image: url(/static/srh.png)
+    }
+    80%{
+        background-image: url(/static/rr.png)
+    }
+    90%{
+        background-image: url(/static/dc.png)
+    }
+    100%{
+        background-image: url(/static/mi.jpg)
+    }
+}
+
+.banner .img-chng2{
+    position: absolute;
+    top: 55%;
+    right: -1.6%;
+    transform: translate(-50%,-50%);
+    width: 290px;
+    height: 420px;
+    padding: 50px;
+    background:url(/static/csk.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    border-radius: 7px;
+    box-shadow: 0 19px 29px rgba(0,0,0,0.5);
+
+    animation-name: slide;
+     animation-direction: alternate-reverse;
+     animation-duration: 20s;
+     animation-fill-mode:forwards;
+     animation-iteration-count: infinite;
+     animation-play-state: running;
+     animation-timing-function: ease-in-out;
+
+}
+@keyframes slide{
+0%{
+    background-image: url(/static/mi.jpg)
+}
+20%{
+    background-image: url(/static/rr.png)
+}
+40%{
+    background-image: url(/static/dc.png)
+}
+50%{
+    background-image: url(/static/csk.png)
+}
+60%{
+    background-image: url(/static/kkr.jpg)
+}
+80%{
+    background-image: url(/static/kxip.png)
+}
+90%{
+    background-image: url(/static/rcb.png)
+}
+100%{
+    background-image: url(/static/srh.png)
+}
+}
+
+.box .form-group{
+
+    margin: 0 20 4px;
+    padding: 4px;
+    color: rgb(0, 204, 255);
+    font-size: 1.2rem;
+    font-family: cursive;
+    
+}
+.box .form-group .form-control{
+    position: relative;
+    width: 90%;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    background: transparent;
+    color: rgb(255, 255, 255);
+
+}
+.box .form-group .form-control option{
+    color: #000;
+}
+.box .form-group  label{
+    font-weight: bold;
+    top: -18px;
+    margin: 0 10px;
+    pointer-events: none;
+    font-size: 19px;
+    transition: .5s;
+}
+
+.box #sub-btn input[type="submit"]{
+    background: transparent;
+    border:none;
+    outline: none;
+    color: black;
+    background-color:rgb(0, 204, 255) ;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+
+
+
+header.sticky .logo
+{
+    position: relative;
+    color:rgb(0, 204, 255);
+} 
+
+
+.content{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: -13%;
+    left: 54%;
+    transform: translate(-50%,-50%);
+}
+#clicked:active ~.content{
+    opacity: 1;
+    visibility: visible;
+}
+.content{
+    width: 350px;
+    height: 300px;
+    background: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.4);
+}  
+
+.header{
+    height: 60px;
+    background: cyan;
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0, 0.2);
+
+}
+.header h2{
+    color: #000;
+    padding-left: 35px;
+    font-weight: normal;
+
+}
+.fa-times{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fa-check{
+    font-size: 25px;
+    margin: 30px 0 0 160px;
+    color:rgb(24, 201, 24);
+    font-weight: bold;
+    height: 65px;
+    width: 65px;
+    border: 1px solid rgb(24, 201, 24) ;
+    text-align: center;
+    padding-top: 13px;
+    border-radius:50% ;
+    box-sizing: border-box;
+    margin: 28px 0 0 160px;
+}
+p{
+padding-top: 10px;
+font-size: 19px;
+text-align: center;
+}
+
+.line{
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    height:1px;
+    background: silver;
+
+}
+.close-btn{
+
+    position: absolute;
+    bottom: 12px;
+    right: 25px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 8px 10px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+

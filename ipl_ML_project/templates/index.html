@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+     <a href="#" class="logo">IPL Score Predictor</a>
+     
+    </header>
+
+    
+  <section class="banner">
+   <div class="img-chng">
+       
+   <div id="img-data"></div>
+
+   </div>
+   <div class="img-chng2">
+    <div id="img-data2"></div>
+ 
+    </div>
+
+
+
+
+
+
+      <section class="form-box">
+          <div class="box">
+         <form action="/" method="POST">
+        <div class="form-group">
+            <label for="batting-team">Select Batting Team </label>
+            <select class="form-control" id="batting-team" name="batting-team">
+              
+                  <option value="Mumbai Indians">Mumbai Indians</option>
+                  <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                  <option value="Chennai Super Kings">Chennai Super Kings</option>
+                  <option value="Rajasthan Royals">Rajasthan Royals</option>
+                  <option value="Kings XI Punjab">Kings XI Punjab</option>
+                  <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                  <option value="Delhi Daredevils">Delhi Daredevils</option>
+                  <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bowling-team">Select Bowling Team </label>
+            <select  class="form-control" id="bowling-team" name="bowling-team">
+              <option value="Mumbai Indians">Mumbai Indians</option>
+                  <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                  <option value="Chennai Super Kings">Chennai Super Kings</option>
+                  <option value="Rajasthan Royals">Rajasthan Royals</option>
+                  <option value="Kings XI Punjab">Kings XI Punjab</option>
+                  <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                  <option value="Delhi Daredevils">Delhi Daredevils</option>
+                  <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+            </select>
+          </div>
+    
+    
+          <div class="form-group">
+              <label for="overs" >Overs</label>
+              <input type="text" class="form-control" name="overs" placeholder="Overs (>= 5.0) eg. 7.2"><br>
+          </div>
+          <div class="form-group">
+              <label for="runs" >Runs</label>
+              <input type="text" class="form-control" name="runs" placeholder="Runs eg. 64"><br>
+          </div>
+    
+          <div class="form-group">
+              <label for="wickets">Wickets</label>
+              <input type="text" class="form-control"  name="wickets" placeholder="Wickets eg. 4"><br>
+          </div>
+    
+          <div class="form-group">
+              <label for="runs_in_prev_5" >Runs scored in prev 5 overs  </label>
+              <input type="text" class="form-control"   name="runs_in_prev_5" placeholder="Runs scored in prev 5 Overs eg. 42"><br>
+          </div>
+    
+          <div class="form-group">
+              <label for="wickets_in_prev_5" >Wickets taken in prev 5 overs  </label>
+              <input type="text" class="form-control"   name="wickets_in_prev_5" placeholder="Wickets taken in prev 5 Overs eg. 3"><br>
+    
+          </div>
+          <div class="text-center" id="sub-btn">
+              
+              <input type="submit" class="myButton" value="Predict Score">
+
+          </div>
+          
+          
+        </form>
+       </div>
+      </section>
+    </section>
+    <script type="text/javascript">
+    window.addEventListener("scroll",function(){
+    var header=document.querySelector("header");
+    header.classList.toggle("sticky",window.scrollY >0);
+    })
+
+    </script>
+</body>
+</html>
+
+
